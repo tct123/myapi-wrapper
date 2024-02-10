@@ -21,9 +21,9 @@ class Wrapper:
         length = int(lenresponse[0]["length"])
         return length
 
-
-wp = Wrapper("http://127.0.0.1:8000")
-length = wp.getlength()
-items = wp.get_all_items()
-for item in range(0,length):
-    print(f"{items[item]["name"]}, {items[item]["price_in_euro"]}, {items[item]["typ"]}.")
+if __name__ == "__main__":
+    wp = Wrapper("http://127.0.0.1:8000")
+    length = wp.getlength()
+    items = wp.get_all_items()
+    for item in range(0,length):
+        print(f"{items[item]["name"]}, {items[item]["price_in_euro"]}, {items[item]["typ"]}.")
