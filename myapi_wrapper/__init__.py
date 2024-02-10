@@ -1,1 +1,0 @@
-from myapi_wrapper.script import *
